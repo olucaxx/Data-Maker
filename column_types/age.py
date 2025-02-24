@@ -12,3 +12,7 @@ class Age:
     
     def __str__(self):
         return f"{self.age}"
+    
+    
+if __name__ == "__main__":
+    print(Age())

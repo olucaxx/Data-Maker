@@ -22,9 +22,13 @@ class CPF:
         cpf_numbers = [randint(0, 9) for _ in range(9)]
         
         cpf_numbers.append(self.calculate_verifier_digit(cpf_numbers, 10))
-        
         cpf_numbers.append(self.calculate_verifier_digit(cpf_numbers, 11))
+        
+        return ''.join(map(str, cpf_numbers))
         
         
     def __str__(self):
         return f"{self.cpf}"
+    
+if __name__ == "__main__":
+    print(CPF())

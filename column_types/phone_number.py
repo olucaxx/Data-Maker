@@ -27,3 +27,6 @@ class PhoneNumber:
     def __str__(self):
         return f"{self.phone_number}"
     
+
+if __name__ == "__main__":
+    print(PhoneNumber())
